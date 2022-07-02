@@ -17,10 +17,12 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^0.2.2"
   },
-  "homepage": "https://ZMonk91.github.io/RandomStoicStartPage",
+  "homepage": "https://ZMonk91.github.io/RandomStoicStartPage/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

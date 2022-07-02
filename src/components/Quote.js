@@ -12,17 +12,19 @@ const Quote = (props) => {
   }, []);
 
   const fetchQuote = async function () {
-    const response = await fetch('https://api.themotivate365.com/stoic-quote');
+    const response = await fetch(
+      'https://stoicquotesapi.com/v1/api/quotes/random'
+    );
     const responseJSON = await response.json();
-    const data = await responseJSON.data;
+    const data = await responseJSON
     return { ...data };
   };
-  if (!quoteInfo.author) return <div {...props}>
+  if (!quoteInfo.body) return <div {...props}>
   <SkeletonText noOfLines={3} mx='20%'/><br/>
   <SkeletonText ml='50%' mr='20%' noOfLines={1}/></div>;
   return (
     <div {...props}>
-      <QuoteText quote={quoteInfo.quote} />
+      <QuoteText quote={quoteInfo.body} />
       <QuoteAuthor author={quoteInfo.author} />
     </div>
   );
