@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.js": "/RandomStoicStartPage/static/js/main.f206b860.js",
+    "static/js/377.c1855308.chunk.js": "/RandomStoicStartPage/static/js/377.c1855308.chunk.js",
+    "index.html": "/RandomStoicStartPage/index.html",
+    "main.f206b860.js.map": "/RandomStoicStartPage/static/js/main.f206b860.js.map",
+    "377.c1855308.chunk.js.map": "/RandomStoicStartPage/static/js/377.c1855308.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.f206b860.js"
+  ]
+}
